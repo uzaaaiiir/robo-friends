@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import Hello from "./Hello";
+import "tachyons";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -11,6 +12,7 @@ root.render(
         <Hello />
         <h1>Hello World</h1>
         <App />
+        <Hello greetings={"Hello" + "React Ninja"} />
     </React.StrictMode>
 );
 
